@@ -5,10 +5,9 @@
 
 #include <Arduino.h>
 #include <WiFi.h>
+#include "secrets.h"
 
-#define LED_PIN       2
-#define WIFI_SSID     "Mbcare2"
-#define WIFI_PASSWORD "121nguyenthaibinhminh"
+#define LED_PIN 2
 
 void connectWiFi() {
   Serial.printf("[WiFi] Connecting to %s", WIFI_SSID);
