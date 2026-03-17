@@ -5,7 +5,7 @@
 
 #include <Arduino.h>
 #include <WiFi.h>
-#include "secrets.h"
+#include "config.h"
 
 #define LED_PIN 2
 
