@@ -9,11 +9,14 @@
 
 void setup() {
   pinMode(LED_PIN, OUTPUT);
+  Serial.begin(115200); 
 }
 
 void loop() {
   digitalWrite(LED_PIN, HIGH);  // LED on
-  delay(500);
+  Serial.println("LED ON");
+  delay(1000);
   digitalWrite(LED_PIN, LOW);   // LED off
-  delay(500);
+  Serial.println("LED OFF");
+  delay(1000);
 }
