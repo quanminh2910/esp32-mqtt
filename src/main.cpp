@@ -1,10 +1,10 @@
 // Simple LED blink for ESP-WROOM-32 (esp32dev)
 // GPIO 2 = built-in LED (or connect external LED + 220Ω resistor to any GPIO)
-//
-// To use: copy this content into src/main.cpp, replacing the current code.
 
 #include <Arduino.h>
 #include <WiFi.h>
+//#include "soc/soc.h"
+//#include "soc/rtc_cntl_reg.h"
 #include "config.h"
 
 #define LED_PIN 2
@@ -25,6 +25,7 @@ void connectWiFi() {
 }
 
 void setup() {
+  //WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);  // disable brownout detector
   pinMode(LED_PIN, OUTPUT);
   Serial.begin(115200);
   delay(1000);
