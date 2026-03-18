@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
-#include "config.h"
+#include "../config/config.h"
 
 #define LED_PIN 2
 
