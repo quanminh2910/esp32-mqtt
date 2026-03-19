@@ -2,6 +2,7 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include "../config/config.h"
+#include "../config/firebase_config.h"
 
 #define LED_PIN 2
 
